@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A6AFFA">
+
+        <Button
+            android:id="@+id/buttonMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="80dp"
+            android:text="-"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/buttonShare"
+            app:layout_constraintTop_toBottomOf="@+id/buttonMultiply" />
+
+        <EditText
+            android:id="@+id/editTextFirstNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="104dp"
+            android:ems="10"
+            android:hint="Введите первое число"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="112dp"
+            android:text="+"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextFirstNumber" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="112dp"
+            android:text="*"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/buttonPlus"
+            app:layout_constraintTop_toBottomOf="@+id/editTextFirstNumber" />
+
+        <Button
+            android:id="@+id/buttonShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="80dp"
+            android:text="/"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonPlus" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="185dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="24dp"
+            android:background="#596EFD"
+            android:shadowColor="#ED9292"
+            android:text="Калькулятор"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextSecondNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Введите второе число"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextFirstNumber"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textViewAnswer"
+            android:layout_width="205dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="488dp"
+            android:background="#496EEF"
+            android:hint="Ответ:"
+            android:text="Ответ:"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

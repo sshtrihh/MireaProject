@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HardwareFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:text="ACCELEROMETER"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="64dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewAccelerometerAzimuth"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textViewAccelerometerPitch"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textViewAccelerometerRoll"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="94dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="32dp"
+            android:text="ORIENTATION"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewOrientationXY"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textViewOrientationXZ"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textViewOrientationYZ"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:text="GRAVITY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.285" />
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="234dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewGravityX"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textViewGravityY"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textViewGravityZ"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewCamera"
+            android:layout_width="144dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="452dp"
+            android:src="@drawable/ic_menu_camera"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonOpenCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="52dp"
+            android:text="Take a photo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewCamera" />
+
+        <Button
+            android:id="@+id/buttonRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="76dp"
+            android:text="Record"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <Button
+            android:id="@+id/buttonPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="20dp"
+            android:text="Play"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewCamera" />
+
+        <Button
+            android:id="@+id/buttonStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="28dp"
+            android:text="Stop"
+            app:layout_constraintEnd_toStartOf="@+id/buttonPlay"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewCamera" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="103dp"
+            android:layout_height="108dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="148dp"
+            android:src="@android:drawable/presence_audio_away"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
