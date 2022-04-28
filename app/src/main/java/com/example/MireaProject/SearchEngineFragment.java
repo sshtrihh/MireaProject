@@ -1,9 +1,8 @@
 package com.example.MireaProject;
 
-import android.annotation.SuppressLint;
-import android.app.Fragment;
 import android.os.Bundle;
 
+import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,14 +14,15 @@ import android.widget.EditText;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link BrowserFragment#newInstance} factory method to
+ * Use the {@link SearchEngineFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class BrowserFragment extends Fragment {
+public class SearchEngineFragment extends Fragment {
 
     EditText inputUrl;
     WebView webView;
     Button searchButton, forwardButton, backButton, refreshButton;
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -32,7 +32,7 @@ public class BrowserFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public BrowserFragment() {
+    public SearchEngineFragment() {
         // Required empty public constructor
     }
 
@@ -42,11 +42,11 @@ public class BrowserFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment BrowserFragment.
+     * @return A new instance of fragment SearchEngineFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static BrowserFragment newInstance(String param1, String param2) {
-        BrowserFragment fragment = new BrowserFragment();
+    public static SearchEngineFragment newInstance(String param1, String param2) {
+        SearchEngineFragment fragment = new SearchEngineFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -63,12 +63,11 @@ public class BrowserFragment extends Fragment {
         }
     }
 
-    @SuppressLint("SetJavaScriptEnabled")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View inflatedView = inflater.inflate(R.layout.fragment_browser, container, false);
+        View inflatedView = inflater.inflate(R.layout.fragment_search_engine, container, false);
 
         inputUrl = (EditText) inflatedView.findViewById(R.id.editTextURL);
         webView = (WebView) inflatedView.findViewById(R.id.webView);
@@ -77,12 +76,16 @@ public class BrowserFragment extends Fragment {
         backButton = (Button) inflatedView.findViewById(R.id.buttonBack);
         refreshButton = (Button) inflatedView.findViewById(R.id.buttonRefresh);
 
+
         webView.setWebViewClient(new MyClient());
+
 
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
+
         webView.loadUrl("http://www.google.com");
+
 
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -122,5 +125,4 @@ public class BrowserFragment extends Fragment {
 
         return inflatedView;
     }
-
 }

@@ -21,9 +21,9 @@
             android:icon="@drawable/ic_baseline_calculate_24"
             android:title="@string/menu_calculator" />
         <item
-            android:id="@+id/nav_browser"
+            android:id="@+id/nav_searchEngine"
             android:icon="@drawable/ic_baseline_search_24"
-            android:title="@string/menu_browser" />
+            android:title="@string/menu_searchEngine" />
         <item
             android:id="@+id/nav_audio"
             android:icon="@drawable/ic_baseline_audiotrack_24"
