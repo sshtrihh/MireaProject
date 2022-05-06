@@ -3,9 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/MireaProject/app/src/main/res/drawable/ic_baseline_amp_stories_24.xml" value="0.126" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MireaProject/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.126" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MireaProject/app/src/main/res/drawable/ic_baseline_touch_app_24.xml" value="0.126" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MireaProject/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MireaProject/app/src/main/res/layout/fragment_browser.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MireaProject/app/src/main/res/layout/fragment_item_list.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MireaProject/app/src/main/res/layout/fragment_search_engine.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MireaProject/app/src/main/res/layout/fragment_settings.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MireaProject/app/src/main/res/layout/fragment_stories.xml" value="0.21" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MireaProject/app/src/main/res/layout/fragment_stories2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MireaProject/app/src/main/res/layout/fragment_stories_list.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MireaProject/app/src/main/res/menu/activity_main_drawer.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MireaProject/app/src/main/res/menu/main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/practice3_finalTask/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.117" />
