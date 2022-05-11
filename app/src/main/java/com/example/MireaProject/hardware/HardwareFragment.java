@@ -1,4 +1,4 @@
-package com.example.MireaProject;
+package com.example.MireaProject.hardware;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -30,6 +30,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.MireaProject.R;
 
 import java.io.File;
 import java.io.IOException;

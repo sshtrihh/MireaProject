@@ -20,7 +20,7 @@
         android:theme="@style/Theme.Practice3_finalTask"
         tools:targetApi="31">
         <service
-            android:name="com.example.MireaProject.HardwareAudioService"
+            android:name="com.example.MireaProject.hardware.HardwareAudioService"
             android:enabled="true"
             android:exported="true"></service>
 
@@ -35,7 +35,7 @@
         </provider>
 
         <service
-            android:name="com.example.MireaProject.AudioService"
+            android:name="com.example.MireaProject.audio.AudioService"
             android:enabled="true"
             android:exported="true" />
 

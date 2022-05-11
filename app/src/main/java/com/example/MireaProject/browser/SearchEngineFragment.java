@@ -1,4 +1,4 @@
-package com.example.MireaProject;
+package com.example.MireaProject.browser;
 
 import android.os.Bundle;
 
@@ -11,6 +11,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.example.MireaProject.R;
 
 /**
  * A simple {@link Fragment} subclass.

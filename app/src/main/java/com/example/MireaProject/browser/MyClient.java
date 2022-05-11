@@ -1,4 +1,4 @@
-package com.example.MireaProject;
+package com.example.MireaProject.browser;
 
 import android.webkit.WebView;
 import android.webkit.WebViewClient;

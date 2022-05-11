@@ -1,4 +1,4 @@
-package com.example.MireaProject;
+package com.example.MireaProject.hardware;
 
 import android.app.Service;
 import android.content.Intent;

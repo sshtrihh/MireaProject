@@ -6,11 +6,6 @@
     app:startDestination="@+id/nav_home">
 
     <fragment
-        android:id="@+id/nav_stories"
-        android:name="com.example.MireaProject.ItemFragment"
-        android:label="@string/menu_stories"
-        tools:layout="@layout/fragment_item_list" />
-    <fragment
         android:id="@+id/nav_settings"
         android:name="com.example.MireaProject.SettingsFragment"
         android:label="@string/menu_settings"
