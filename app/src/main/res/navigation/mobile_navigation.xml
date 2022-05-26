@@ -6,22 +6,26 @@
     app:startDestination="@+id/nav_home">
 
     <fragment
+        android:id="@+id/nav_stories"
+        android:name="com.example.MireaProject.stories.StoriesFragment"
+        android:label="@string/menu_stories" />
+    <fragment
         android:id="@+id/nav_settings"
         android:name="com.example.MireaProject.SettingsFragment"
         android:label="@string/menu_settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/nav_searchEngine"
-        android:name="com.example.MireaProject.SearchEngineFragment"
+        android:name="com.example.MireaProject.browser.SearchEngineFragment"
         android:label="@string/menu_searchEngine" />
     <fragment
         android:id="@+id/nav_hardware"
-        android:name="com.example.MireaProject.HardwareFragment"
+        android:name="com.example.MireaProject.hardware.HardwareFragment"
         android:label="@string/menu_hardware"
         tools:layout="@layout/fragment_hardware" />
     <fragment
         android:id="@+id/nav_audio"
-        android:name="com.example.MireaProject.AudioFragment"
+        android:name="com.example.MireaProject.audio.AudioFragment"
         android:label="@string/menu_audio"
         tools:layout="@layout/fragment_audio" />
     <fragment
